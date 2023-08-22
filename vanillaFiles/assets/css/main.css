@@ -1,0 +1,57 @@
+/* main stylesheet */
+
+/* setup a main theme for the site */
+
+/* 
+
+- Media Queries
+- Breakpoints
+*/
+@media screen and (min-width: 1100px) {
+  .section-body {
+    flex-direction: row;
+    background-color: blue;
+    animation-iteration-count: infinite;
+    animation-name: changeColor;
+    animation-duration: 7s;
+  }
+}
+
+/* animation safety box */
+@media not screen and (prefers-reduced-motion) {
+  @keyframes changeColor {
+    0% {
+      background-color: blue;
+    }
+
+    75% {
+      background-color: aqua;
+    }
+    100% {
+      background-color: green;
+    }
+  }
+} /*
+    - CSS Measurements
+        - EM
+        - REM
+        - SVH
+        - VW
+        - %
+        - PX
+        - CH
+        - FR
+       
+    - CSS Functions
+        - calc()
+        - min()
+        - max()
+        - clamp() 
+    - CSS Positioning
+     - flexbox clarification
+    - CSS Animation
+        - quick cover of CSS animation
+            - Clip Path
+                - circle
+                - text
+                - https://bennettfeely.com/clippy/ <- use this generator for image */
